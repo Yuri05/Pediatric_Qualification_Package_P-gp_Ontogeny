@@ -150,7 +150,7 @@
                 "Title":  "Overall predictivity of the PBPK models. Open circles represent mean ratios of PBPK predicted AUC over observed AUC of all drugs in children 3 days to 8 years old. Blue dashed lines and red dotted lines represent the 1.5-fold and 2-fold error, respectively.",
                 "SectionReference":  "Results",
                 "Artifacts": ["GMFE", "Measure", "Plot", "Table"],
-                "PKParameters":  ["AUC"],
+                "PKParameters":  ["CL"],
                 "Groups":  [
                     {
                     "Caption": "PKRatio results",
@@ -326,7 +326,7 @@
                 "Title": "Predictivity of the Digoxin PBPK model. Open circles represent mean ratios of PBPK predicted AUC over observed AUC of all drugs in children 3 days to 8 years old. Blue dashed lines and red dotted lines represent the 1.5-fold and 2-fold error, respectively.",
                "SectionReference":  "Results",
                 "Artifacts": ["GMFE", "Measure", "Plot", "Table"],
-                "PKParameters":  ["AUC"],
+                "PKParameters":  ["CL"],
                 "Groups":  [
                     {
                     "Caption": "PKRatio results",
