@@ -159,7 +159,7 @@
                     "PKRatios":  [
                         {
                             "Project": "Digoxin-Pediatrics",
-                            "Simulation": "Nyberg 1980 0.5 infants (mean)",
+                            "Simulation": "Nyberg 1980 0.5m infants (mean)",
                             "Output": "Organism|PeripheralVenousBlood|Digoxin|Plasma (Peripheral Venous Blood)",
                             "ObservedData": "PK-Parameter",
                             "ObservedDataRecordId": 5222
