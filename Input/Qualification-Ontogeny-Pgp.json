@@ -201,24 +201,10 @@
                         },
                         {
                             "Project": "Digoxin-Pediatrics",
-                            "Simulation": "Ratnapalan 2003 ID1 - 15m",
-                            "Output": "Organism|PeripheralVenousBlood|Digoxin|Plasma (Peripheral Venous Blood)",
-                            "ObservedData": "PK-Parameter",
-                            "ObservedDataRecordId": 5205
-                        },
-                        {
-                            "Project": "Digoxin-Pediatrics",
                             "Simulation": "Ratnapalan 2003 ID1 - 16m",
                             "Output": "Organism|PeripheralVenousBlood|Digoxin|Plasma (Peripheral Venous Blood)",
                             "ObservedData": "PK-Parameter",
                             "ObservedDataRecordId": 5206
-                        },
-                        {
-                            "Project": "Digoxin-Pediatrics",
-                            "Simulation": "Ratnapalan 2003 ID1 - 2y, 4m",
-                            "Output": "Organism|PeripheralVenousBlood|Digoxin|Plasma (Peripheral Venous Blood)",
-                            "ObservedData": "PK-Parameter",
-                            "ObservedDataRecordId": 5207
                         },  
                         {
                             "Project": "Digoxin-Pediatrics",
@@ -229,24 +215,10 @@
                         },
                         {
                             "Project": "Digoxin-Pediatrics",
-                            "Simulation": "Ratnapalan 2003 ID2 - 13m",
-                            "Output": "Organism|PeripheralVenousBlood|Digoxin|Plasma (Peripheral Venous Blood)",
-                            "ObservedData": "PK-Parameter",
-                            "ObservedDataRecordId": 5209
-                        },
-                        {
-                            "Project": "Digoxin-Pediatrics",
                             "Simulation": "Ratnapalan 2003 ID3 - 3y8m",
                             "Output": "Organism|PeripheralVenousBlood|Digoxin|Plasma (Peripheral Venous Blood)",
                             "ObservedData": "PK-Parameter",
                             "ObservedDataRecordId": 5210
-                        },
-                        {
-                            "Project": "Digoxin-Pediatrics",
-                            "Simulation": "Ratnapalan 2003 ID3 - 7y8m",
-                            "Output": "Organism|PeripheralVenousBlood|Digoxin|Plasma (Peripheral Venous Blood)",
-                            "ObservedData": "PK-Parameter",
-                            "ObservedDataRecordId": 5211
                         },
                         {
                             "Project": "Digoxin-Pediatrics",
@@ -257,24 +229,10 @@
                         },
                         {
                             "Project": "Digoxin-Pediatrics",
-                            "Simulation": "Ratnapalan 2003 ID4 - 3y5m",
-                            "Output": "Organism|PeripheralVenousBlood|Digoxin|Plasma (Peripheral Venous Blood)",
-                            "ObservedData": "PK-Parameter",
-                            "ObservedDataRecordId": 5213
-                        },
-                        {
-                            "Project": "Digoxin-Pediatrics",
                             "Simulation": "Ratnapalan 2003 ID5 - 2w",
                             "Output": "Organism|PeripheralVenousBlood|Digoxin|Plasma (Peripheral Venous Blood)",
                             "ObservedData": "PK-Parameter",
                             "ObservedDataRecordId": 5214
-                        },
-                        {
-                            "Project": "Digoxin-Pediatrics",
-                            "Simulation": "Ratnapalan 2003 ID5 - 4w",
-                            "Output": "Organism|PeripheralVenousBlood|Digoxin|Plasma (Peripheral Venous Blood)",
-                            "ObservedData": "PK-Parameter",
-                            "ObservedDataRecordId": 5215
                         },
                         {
                             "Project": "Digoxin-Pediatrics",
@@ -285,38 +243,10 @@
                         },
                         {
                             "Project": "Digoxin-Pediatrics",
-                            "Simulation": "Ratnapalan 2003 ID6 - 8m",
-                            "Output": "Organism|PeripheralVenousBlood|Digoxin|Plasma (Peripheral Venous Blood)",
-                            "ObservedData": "PK-Parameter",
-                            "ObservedDataRecordId": 5217
-                        },
-                        {
-                            "Project": "Digoxin-Pediatrics",
                             "Simulation": "Ratnapalan 2003 ID7 - 8m",
                             "Output": "Organism|PeripheralVenousBlood|Digoxin|Plasma (Peripheral Venous Blood)",
                             "ObservedData": "PK-Parameter",
                             "ObservedDataRecordId": 5218
-                        },
-                        {
-                            "Project": "Digoxin-Pediatrics",
-                            "Simulation": "Ratnapalan 2003 ID7 - 9m",
-                            "Output": "Organism|PeripheralVenousBlood|Digoxin|Plasma (Peripheral Venous Blood)",
-                            "ObservedData": "PK-Parameter",
-                            "ObservedDataRecordId": 5219
-                        },
-                        {
-                            "Project": "Digoxin-Pediatrics",
-                            "Simulation": "Ratnapalan 2003 ID8 - 7m",
-                            "Output": "Organism|PeripheralVenousBlood|Digoxin|Plasma (Peripheral Venous Blood)",
-                            "ObservedData": "PK-Parameter",
-                            "ObservedDataRecordId": 5220
-                        },
-                        {
-                            "Project": "Digoxin-Pediatrics",
-                            "Simulation": "Ratnapalan 2003 ID8 - 8m",
-                            "Output": "Organism|PeripheralVenousBlood|Digoxin|Plasma (Peripheral Venous Blood)",
-                            "ObservedData": "PK-Parameter",
-                            "ObservedDataRecordId": 5221
                         }
                     ]
                     }
@@ -377,24 +307,10 @@
                         },
                         {
                             "Project": "Digoxin-Pediatrics",
-                            "Simulation": "Ratnapalan 2003 ID1 - 15m",
-                            "Output": "Organism|PeripheralVenousBlood|Digoxin|Plasma (Peripheral Venous Blood)",
-                            "ObservedData": "PK-Parameter",
-                            "ObservedDataRecordId": 5205
-                        },
-                        {
-                            "Project": "Digoxin-Pediatrics",
                             "Simulation": "Ratnapalan 2003 ID1 - 16m",
                             "Output": "Organism|PeripheralVenousBlood|Digoxin|Plasma (Peripheral Venous Blood)",
                             "ObservedData": "PK-Parameter",
                             "ObservedDataRecordId": 5206
-                        },
-                        {
-                            "Project": "Digoxin-Pediatrics",
-                            "Simulation": "Ratnapalan 2003 ID1 - 2y, 4m",
-                            "Output": "Organism|PeripheralVenousBlood|Digoxin|Plasma (Peripheral Venous Blood)",
-                            "ObservedData": "PK-Parameter",
-                            "ObservedDataRecordId": 5207
                         },  
                         {
                             "Project": "Digoxin-Pediatrics",
@@ -405,24 +321,10 @@
                         },
                         {
                             "Project": "Digoxin-Pediatrics",
-                            "Simulation": "Ratnapalan 2003 ID2 - 13m",
-                            "Output": "Organism|PeripheralVenousBlood|Digoxin|Plasma (Peripheral Venous Blood)",
-                            "ObservedData": "PK-Parameter",
-                            "ObservedDataRecordId": 5209
-                        },
-                        {
-                            "Project": "Digoxin-Pediatrics",
                             "Simulation": "Ratnapalan 2003 ID3 - 3y8m",
                             "Output": "Organism|PeripheralVenousBlood|Digoxin|Plasma (Peripheral Venous Blood)",
                             "ObservedData": "PK-Parameter",
                             "ObservedDataRecordId": 5210
-                        },
-                        {
-                            "Project": "Digoxin-Pediatrics",
-                            "Simulation": "Ratnapalan 2003 ID3 - 7y8m",
-                            "Output": "Organism|PeripheralVenousBlood|Digoxin|Plasma (Peripheral Venous Blood)",
-                            "ObservedData": "PK-Parameter",
-                            "ObservedDataRecordId": 5211
                         },
                         {
                             "Project": "Digoxin-Pediatrics",
@@ -433,24 +335,10 @@
                         },
                         {
                             "Project": "Digoxin-Pediatrics",
-                            "Simulation": "Ratnapalan 2003 ID4 - 3y5m",
-                            "Output": "Organism|PeripheralVenousBlood|Digoxin|Plasma (Peripheral Venous Blood)",
-                            "ObservedData": "PK-Parameter",
-                            "ObservedDataRecordId": 5213
-                        },
-                        {
-                            "Project": "Digoxin-Pediatrics",
                             "Simulation": "Ratnapalan 2003 ID5 - 2w",
                             "Output": "Organism|PeripheralVenousBlood|Digoxin|Plasma (Peripheral Venous Blood)",
                             "ObservedData": "PK-Parameter",
                             "ObservedDataRecordId": 5214
-                        },
-                        {
-                            "Project": "Digoxin-Pediatrics",
-                            "Simulation": "Ratnapalan 2003 ID5 - 4w",
-                            "Output": "Organism|PeripheralVenousBlood|Digoxin|Plasma (Peripheral Venous Blood)",
-                            "ObservedData": "PK-Parameter",
-                            "ObservedDataRecordId": 5215
                         },
                         {
                             "Project": "Digoxin-Pediatrics",
@@ -461,41 +349,12 @@
                         },
                         {
                             "Project": "Digoxin-Pediatrics",
-                            "Simulation": "Ratnapalan 2003 ID6 - 8m",
-                            "Output": "Organism|PeripheralVenousBlood|Digoxin|Plasma (Peripheral Venous Blood)",
-                            "ObservedData": "PK-Parameter",
-                            "ObservedDataRecordId": 5217
-                        },
-                        {
-                            "Project": "Digoxin-Pediatrics",
                             "Simulation": "Ratnapalan 2003 ID7 - 8m",
                             "Output": "Organism|PeripheralVenousBlood|Digoxin|Plasma (Peripheral Venous Blood)",
                             "ObservedData": "PK-Parameter",
                             "ObservedDataRecordId": 5218
-                        },
-                        {
-                            "Project": "Digoxin-Pediatrics",
-                            "Simulation": "Ratnapalan 2003 ID7 - 9m",
-                            "Output": "Organism|PeripheralVenousBlood|Digoxin|Plasma (Peripheral Venous Blood)",
-                            "ObservedData": "PK-Parameter",
-                            "ObservedDataRecordId": 5219
-                        },
-                        {
-                            "Project": "Digoxin-Pediatrics",
-                            "Simulation": "Ratnapalan 2003 ID8 - 7m",
-                            "Output": "Organism|PeripheralVenousBlood|Digoxin|Plasma (Peripheral Venous Blood)",
-                            "ObservedData": "PK-Parameter",
-                            "ObservedDataRecordId": 5220
-                        },
-                        {
-                            "Project": "Digoxin-Pediatrics",
-                            "Simulation": "Ratnapalan 2003 ID8 - 8m",
-                            "Output": "Organism|PeripheralVenousBlood|Digoxin|Plasma (Peripheral Venous Blood)",
-                            "ObservedData": "PK-Parameter",
-                            "ObservedDataRecordId": 5221
                         }
                     ]
-            
             }
         ]
         }
@@ -525,14 +384,7 @@
             "Content": "Content/References.md"
         }
     ],
-    "Inputs": [
-        {
-            "Project": "Digoxin",
-            "Name": "Digoxin",
-            "Type": "Compound",
-            "SectionReference": "final-input-parameters"
-        }
-    ],
+    "Inputs": [],
     "Intro": [
         {
             "Path": "Content/titlepage.md"

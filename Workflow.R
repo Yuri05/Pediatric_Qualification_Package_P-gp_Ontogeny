@@ -1,4 +1,4 @@
-#' @title Digoxin Evaluation report
+#' @title Digoxin qualification report
 #' @description Run a qualification workflow to create a qualification report.
 #' @param qualificationRunnerFolder Folder where QualificationRunner.exe is located
 #' @param pkSimPortableFolder Folder where PK-Sim is located.
@@ -26,7 +26,7 @@
 #' createQualificationReport("C:/Software/QualificationRunner9.1.1", versionInfo = versionInfo)
 #' 
 
-setwd("C:/Digoxin-Model/evaluation/")
+setwd("C:/Pediatric_Qualification_Package_P-gp_Ontogeny")
 qualificationRunnerFolder <- "C:/OSPQualification/QualificationRunner11.0.138"
 pkSimPortableFolder <- "C:/pk-sim-portable"
 
@@ -63,7 +63,7 @@ createQualificationReport <- function(qualificationRunnerFolder,
   #' `workingDirectory`: current directory is used as default working directory
   workingDirectory <- getwd()
 
-  qualificationPlanName <- "Evaluation_plan.json"
+  qualificationPlanName <- "Qualification-Ontogeny-Pgp.json"
   qualificationPlanFile <- file.path(workingDirectory, "Input", qualificationPlanName)
 
   #' The default outputs of qualification runner should be generated under `<workingDirectory>/re_input`
@@ -146,18 +146,20 @@ createQualificationReport <- function(qualificationRunnerFolder,
   }
   
   #' Activate/Deactivate tasks of qualification workflow prior running
-  #  workflow$inactivateTasks("simulate")
+    workflow$inactivateTasks("simulate")
   #  workflow$inactivateTasks("calculatePKParameters")
-  #  workflow$inactivateTasks("plotTimeProfiles")
-  #  workflow$inactivateTasks("plotComparisonTimeProfile")
-  #  workflow$inactivateTasks("plotGOFMerged")
+    workflow$inactivateTasks("plotTimeProfiles")
+    workflow$inactivateTasks("plotComparisonTimeProfile")
+    workflow$inactivateTasks("plotGOFMerged")
   #  workflow$inactivateTasks("plotPKRatio")
     workflow$inactivateTasks("plotDDIRatio")
   
   #' Run the `QualificatitonWorklfow`
    #workflow$plotPKRatio$settings$units$<PK parameter name> <- <PK parameter unit>
-   workflow$plotPKRatio$settings$units$C_max <- "ng/mL"
-      workflow$runWorkflow()
+   #workflow$plotPKRatio$settings$units$C_max <- "ng/mL"
+   workflow$plotPKRatio$settings$units$CL <- "mL/min/kg"
+   workflow$plotPKRatio$settings$units$CL <- "mL/min"
+   workflow$runWorkflow()
   
 
   #' Print timer tracked time if option `recordWorkflowTime` is set to TRUE
