@@ -3,7 +3,7 @@
     "Projects": [
         {
             "Id": "Digoxin",
-            "Path": "https://raw.githubusercontent.com/Incei/Digoxin-Model/Version_2.0/Digoxin.json",
+            "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Digoxin-Model/master/Digoxin.json",
             "BuildingBlocks": [
                 {
                     "Type": "Compound",
@@ -19,14 +19,14 @@
         },
         {
             "Id": "Digoxin-Pediatrics",
-            "Path": "https://raw.githubusercontent.com/Incei/Digoxin-Pediatrics/main/Digoxin_Pediatrics.json",
+            "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Digoxin-Pediatrics/main/Digoxin_Pediatrics.json",
             "BuildingBlocks": []
         }
     ],
     "ObservedDataSets": [
         {
             "Id": "PK-Parameter",
-            "Path": "C:/Pediatric_Qualification_Package_P-gp_Ontogeny/Pediatrics.csv",
+            "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Database-for-observed-data/master/Pediatrics.csv",
             "Type": "PKRatio"
         }
     ],
