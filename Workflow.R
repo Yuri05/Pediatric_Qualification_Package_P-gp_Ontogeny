@@ -1,4 +1,4 @@
-#' @title Digoxin qualification report
+#' @title P-gp qualification report
 #' @description Run a qualification workflow to create a qualification report.
 #' @param qualificationRunnerFolder Folder where QualificationRunner.exe is located
 #' @param pkSimPortableFolder Folder where PK-Sim is located.
@@ -25,10 +25,6 @@
 #' versionInfo <- QualificationVersionInfo$new("1.1", "2.2","3.3")
 #' createQualificationReport("C:/Software/QualificationRunner9.1.1", versionInfo = versionInfo)
 #' 
-
-setwd("C:/Pediatric_Qualification_Package_P-gp_Ontogeny")
-qualificationRunnerFolder <- "C:/OSPQualification/QualificationRunner11.0.138"
-pkSimPortableFolder <- "C:/pk-sim-portable"
 
 
 createQualificationReport <- function(qualificationRunnerFolder,
@@ -147,7 +143,7 @@ createQualificationReport <- function(qualificationRunnerFolder,
   
   #' Activate/Deactivate tasks of qualification workflow prior running
     workflow$inactivateTasks("simulate")
-  #  workflow$inactivateTasks("calculatePKParameters")
+    workflow$inactivateTasks("calculatePKParameters")
     workflow$inactivateTasks("plotTimeProfiles")
     workflow$inactivateTasks("plotComparisonTimeProfile")
     workflow$inactivateTasks("plotGOFMerged")
@@ -158,7 +154,6 @@ createQualificationReport <- function(qualificationRunnerFolder,
    #workflow$plotPKRatio$settings$units$<PK parameter name> <- <PK parameter unit>
    #workflow$plotPKRatio$settings$units$C_max <- "ng/mL"
    workflow$plotPKRatio$settings$units$CL <- "mL/min/kg"
-   workflow$plotPKRatio$settings$units$CL <- "mL/min"
    workflow$runWorkflow()
   
 
@@ -170,9 +165,4 @@ createQualificationReport <- function(qualificationRunnerFolder,
   return(invisible())
 }
 
-createQualificationReport(qualificationRunnerFolder,
-                          pkSimPortableFolder = pkSimPortableFolder,
-                          createWordReport = FALSE,
-                          maxSimulationsPerCore = 3,
-                          versionInfo = NULL,
-                          wordConversionTemplate = NULL)
+
