@@ -1,0 +1,306 @@
+{
+    "$schema": "https://github.com/Open-Systems-Pharmacology/QualificationPlan/releases/download/v3.0/OSP_Qualification_Plan_Schema.json",
+    "Projects": [
+        {
+            "Id": "Digoxin",
+            "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Digoxin-Model/master/Digoxin.json",
+            "BuildingBlocks": [
+                {
+                    "Type": "Compound",
+                    "Name": "Digoxin",
+                    "Project": "Digoxin"
+                },
+                {
+                    "Type": "Formulation",
+                    "Name": "Solution",
+                    "Project": "Digoxin"
+                }
+            ]
+        },
+        {
+            "Id": "Digoxin-Pediatrics",
+            "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Digoxin-Pediatrics/main/Digoxin_Pediatrics.json",
+            "BuildingBlocks": []
+        }
+    ],
+    "ObservedDataSets": [
+        {
+            "Id": "PK-Parameter",
+            "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Database-for-observed-data/master/Pediatrics.csv",
+            "Type": "PKRatio"
+        }
+    ],
+    "Plots": {
+        "PlotSettings": {
+            "ChartWidth": 500,
+            "ChartHeight": 400,
+            "Fonts": {
+                "AxisSize": 11,
+                "LegendSize": 9,
+                "OriginSize": 9,
+                "FontFamilyName": "Arial",
+                "WatermarkSize": 40
+            }
+        },
+        "AxesSettings": {
+            "ComparisonTimeProfile": [
+                {
+                    "Unit": "h",
+                    "Dimension": "Time",
+                    "Type": "X",
+                    "GridLines": false,
+                    "Scaling": "Linear"
+                },
+                {
+                    "Unit": "µg/l",
+                    "Dimension": "Concentration (mass)",
+                    "Type": "Y",
+                    "GridLines": false,
+                    "Scaling": "Log"
+                }
+            ],
+            "DDIRatioPlotsPredictedVsObserved": [
+                {
+                    "Unit": "",
+                    "Dimension": "Dimensionless",
+                    "Type": "X",
+                    "GridLines": false,
+                    "Scaling": "Log"
+                },
+                {
+                    "Unit": "",
+                    "Dimension": "Dimensionless",
+                    "Type": "Y",
+                    "GridLines": false,
+                    "Scaling": "Log"
+                }
+            ],
+            "DDIRatioPlotsResidualsVsObserved": [
+                {
+                    "Unit": "",
+                    "Dimension": "Dimensionless",
+                    "Type": "X",
+                    "GridLines": false,
+                    "Scaling": "Log"
+                },
+                {
+                    "Unit": "",
+                    "Dimension": "Dimensionless",
+                    "Type": "Y",
+                    "GridLines": false,
+                    "Scaling": "Linear"
+                }
+            ],
+            "GOFMergedPlotsPredictedVsObserved": [
+                {
+                    "Unit": "µg/l",
+                    "Dimension": "Concentration (mass)",
+                    "Type": "X",
+                    "GridLines": false,
+                    "Scaling": "Log"
+                },
+                {
+                    "Unit": "µg/l",
+                    "Dimension": "Concentration (mass)",
+                    "Type": "Y",
+                    "GridLines": false,
+                    "Scaling": "Log"
+                }
+            ],
+            "GOFMergedPlotsResidualsOverTime": [
+                {
+                    "Unit": "h",
+                    "Dimension": "Time",
+                    "Type": "X",
+                    "GridLines": false,
+                    "Scaling": "Linear"
+                },
+                {
+                    "Unit": "",
+                    "Dimension": "Dimensionless",
+                    "Type": "Y",
+                    "GridLines": false,
+                    "Scaling": "Linear"
+                }
+            ],
+            "PKRatioPlots": [
+                {
+                    "Unit": "year(s)",
+                    "Dimension": "Age",
+                    "Type": "X",
+                    "GridLines": false,
+                    "Scaling": "Log"
+                },
+                {
+                    "Unit": "",
+                    "Dimension": "Dimensionless",
+                    "Type": "Y",
+                    "GridLines": false,
+                    "Scaling": "Log"
+                }
+            ]
+        },
+        "AllPlots": [],
+        "GOFMergedPlots": [],
+        "ComparisonTimeProfilePlots": [],
+        "DDIRatioPlots": [],
+        "PKRatioPlots": [
+            {
+                "Title": "Overall predictivity of the Digoxin PBPK model. Open circles represent mean ratios of PBPK predicted AUC over observed AUC of digoxin in children 3 days to 8 years old. Blue dashed lines and red dotted lines represent the 1.5-fold and 2-fold error, respectively.",
+                "SectionReference": "Results",
+                "Artifacts": [
+                    "GMFE",
+                    "Measure",
+                    "Plot"
+                ],
+                "PKParameters": [
+                    "CL"
+                ],
+                "Groups": [
+                    {
+                        "Caption": "Nyberg 1980",
+                        "Color": "#1d3e99",
+                        "Symbol": "Circle",
+                        "PKRatios": [
+                            {
+                                "Project": "Digoxin-Pediatrics",
+                                "Simulation": "Nyberg 1980 0.5m infants (mean)",
+                                "Output": "Organism|PeripheralVenousBlood|Digoxin|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "PK-Parameter",
+                                "ObservedDataRecordId": 5222
+                            },
+                            {
+                                "Project": "Digoxin-Pediatrics",
+                                "Simulation": "Nyberg 1980 6.5m infants (mean)",
+                                "Output": "Organism|PeripheralVenousBlood|Digoxin|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "PK-Parameter",
+                                "ObservedDataRecordId": 5223
+                            }
+                        ]
+                    },
+                    {
+                        "Caption": "Rane 1976",
+                        "Color": "#FF0000",
+                        "Symbol": "Circle",
+                        "PKRatios": [
+                            {
+                                "Project": "Digoxin-Pediatrics",
+                                "Simulation": "Rane 1976 6d",
+                                "Output": "Organism|PeripheralVenousBlood|Digoxin|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "PK-Parameter",
+                                "ObservedDataRecordId": 5201
+                            },
+                            {
+                                "Project": "Digoxin-Pediatrics",
+                                "Simulation": "Rane 1976 6.15m",
+                                "Output": "Organism|PeripheralVenousBlood|Digoxin|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "PK-Parameter",
+                                "ObservedDataRecordId": 5202
+                            },
+                            {
+                                "Project": "Digoxin-Pediatrics",
+                                "Simulation": "Rane 1976 3.5y",
+                                "Output": "Organism|PeripheralVenousBlood|Digoxin|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "PK-Parameter",
+                                "ObservedDataRecordId": 5203
+                            }
+                        ]
+                    },
+                    {
+                        "Caption": "Ratnapalan 2003",
+                        "Color": "#15610f",
+                        "Symbol": "Diamond",
+                        "PKRatios": [
+                            {
+                                "Project": "Digoxin-Pediatrics",
+                                "Simulation": "Ratnapalan 2003 ID1 - 1y",
+                                "Output": "Organism|PeripheralVenousBlood|Digoxin|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "PK-Parameter",
+                                "ObservedDataRecordId": 5204
+                            },
+                            {
+                                "Project": "Digoxin-Pediatrics",
+                                "Simulation": "Ratnapalan 2003 ID1 - 16m",
+                                "Output": "Organism|PeripheralVenousBlood|Digoxin|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "PK-Parameter",
+                                "ObservedDataRecordId": 5206
+                            },
+                            {
+                                "Project": "Digoxin-Pediatrics",
+                                "Simulation": "Ratnapalan 2003 ID2 - 9m",
+                                "Output": "Organism|PeripheralVenousBlood|Digoxin|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "PK-Parameter",
+                                "ObservedDataRecordId": 5208
+                            },
+                            {
+                                "Project": "Digoxin-Pediatrics",
+                                "Simulation": "Ratnapalan 2003 ID3 - 3y8m",
+                                "Output": "Organism|PeripheralVenousBlood|Digoxin|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "PK-Parameter",
+                                "ObservedDataRecordId": 5210
+                            },
+                            {
+                                "Project": "Digoxin-Pediatrics",
+                                "Simulation": "Ratnapalan 2003 ID4 - 1y7m",
+                                "Output": "Organism|PeripheralVenousBlood|Digoxin|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "PK-Parameter",
+                                "ObservedDataRecordId": 5212
+                            },
+                            {
+                                "Project": "Digoxin-Pediatrics",
+                                "Simulation": "Ratnapalan 2003 ID5 - 2w",
+                                "Output": "Organism|PeripheralVenousBlood|Digoxin|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "PK-Parameter",
+                                "ObservedDataRecordId": 5214
+                            },
+                            {
+                                "Project": "Digoxin-Pediatrics",
+                                "Simulation": "Ratnapalan 2003 ID6 - 6m",
+                                "Output": "Organism|PeripheralVenousBlood|Digoxin|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "PK-Parameter",
+                                "ObservedDataRecordId": 5216
+                            },
+                            {
+                                "Project": "Digoxin-Pediatrics",
+                                "Simulation": "Ratnapalan 2003 ID7 - 8m",
+                                "Output": "Organism|PeripheralVenousBlood|Digoxin|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "PK-Parameter",
+                                "ObservedDataRecordId": 5218
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "Sections": [
+        {
+            "Reference": "Introduction",
+            "Title": "Introduction to Pediatric Translation and Pgp Ontogeny Qualification",
+            "Content": "Content/Introduction.md"
+        },
+        {
+            "Reference": "Results",
+            "Title": "Pediatric translation qualification results",
+            "Content": "Content/Translation.md",
+            "Sections": [
+                {
+                    "Reference": "Digoxin_children",
+                    "Content": "Content/Digoxin_children.md",
+                    "Title": "Digoxin PK Ratio tables and Figures"
+                }
+            ]
+        },
+        {
+            "Reference": "References",
+            "Title": "References",
+            "Content": "Content/References.md"
+        }
+    ],
+    "Inputs": [],
+    "Intro": [
+        {
+            "Path": "Content/titlepage.md"
+        }
+    ]
+}
