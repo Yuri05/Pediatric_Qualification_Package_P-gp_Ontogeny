@@ -101,7 +101,7 @@ In the next sections the demographics as well as the evaluation results of the p
 
 
 
-TEST: ${GMFE = 10^{\frac{\sum(|log(\frac{Pred}{Obs})|)}{n}} }$
+
 
 
 <a id="Digoxin_children"></a>
