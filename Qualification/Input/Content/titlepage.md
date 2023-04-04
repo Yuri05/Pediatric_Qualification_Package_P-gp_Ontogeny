@@ -16,4 +16,4 @@
 
 This qualification report is filed at:
 
-https://github.com/Open-Systems-Pharmacology/OSP-Qualification-Reports
+[https://github.com/Open-Systems-Pharmacology/OSP-Qualification-Reports](https://github.com/Open-Systems-Pharmacology/OSP-Qualification-Reports)
