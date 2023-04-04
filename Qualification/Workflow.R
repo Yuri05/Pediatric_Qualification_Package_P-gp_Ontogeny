@@ -142,19 +142,19 @@ createQualificationReport <- function(qualificationRunnerFolder,
   }
   
   #' Activate/Deactivate tasks of qualification workflow prior running
-    workflow$inactivateTasks("simulate")
-    workflow$inactivateTasks("calculatePKParameters")
-    workflow$inactivateTasks("plotTimeProfiles")
-    workflow$inactivateTasks("plotComparisonTimeProfile")
-    workflow$inactivateTasks("plotGOFMerged")
-  #  workflow$inactivateTasks("plotPKRatio")
-    workflow$inactivateTasks("plotDDIRatio")
+  # workflow$inactivateTasks("simulate")
+  # workflow$inactivateTasks("calculatePKParameters")
+  # workflow$inactivateTasks("plotTimeProfiles")
+  # workflow$inactivateTasks("plotComparisonTimeProfile")
+  # workflow$inactivateTasks("plotGOFMerged")
+  # workflow$inactivateTasks("plotPKRatio")
+  # workflow$inactivateTasks("plotDDIRatio")
+  
+  #' Define output units
+  workflow$plotPKRatio$settings$units$CL <- "mL/min/kg"
   
   #' Run the `QualificatitonWorklfow`
-   #workflow$plotPKRatio$settings$units$<PK parameter name> <- <PK parameter unit>
-   #workflow$plotPKRatio$settings$units$C_max <- "ng/mL"
-   workflow$plotPKRatio$settings$units$CL <- "mL/min/kg"
-   workflow$runWorkflow()
+  workflow$runWorkflow()
   
 
   #' Print timer tracked time if option `recordWorkflowTime` is set to TRUE
