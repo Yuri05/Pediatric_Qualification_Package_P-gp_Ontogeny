@@ -13,7 +13,7 @@
 #' Default template is available using `system.file("extdata", "reference.docx", package = "ospsuite.reportingengine")`
 #' @examples
 #' # Create a Qualification Report without any option and running v9.1.1 of Qualification Runner
-#' createQualificationReport("C:/Software/QualificationRunner9.1.1")
+createQualificationReport("C:/OSP/QualificationRunner12.0.1")
 #' 
 #' # Create a Qualification Report and turn of the creation of a doc version
 #' createQualificationReport("C:/Software/QualificationRunner9.1.1", createWordReport = FALSE)
@@ -57,7 +57,7 @@ createQualificationReport <- function(qualificationRunnerFolder,
   #' **Template parameters to be replaced below**
 
   #' `workingDirectory`: current directory is used as default working directory
-  workingDirectory <- getwd()
+  workingDirectory <- 'C:/Projects/Github/Pediatric_Qualification_Package_P-gp_Ontogeny/Qualification/Input'
 
   qualificationPlanName <- "Qualification-Ontogeny-Pgp.json"
   qualificationPlanFile <- file.path(workingDirectory, "Input", qualificationPlanName)

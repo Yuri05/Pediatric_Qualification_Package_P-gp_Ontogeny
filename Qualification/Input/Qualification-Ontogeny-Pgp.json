@@ -151,7 +151,8 @@
                 "Artifacts": [
                     "GMFE",
                     "Measure",
-                    "Plot"
+                    "Plot",
+                    "Table"
                 ],
                 "PKParameters": [
                     "CL"

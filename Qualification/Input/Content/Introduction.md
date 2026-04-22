@@ -22,6 +22,55 @@ The age-dependencies of the relevant anthropometric (height, weight) and physiol
 
 The  applied ontogeny and variability of plasma proteins and active processes that are integrated into PK-Sim® for translation to children are described in the publicly available ‘PK-Sim® Ontogeny Database Version 7.3 [[Ontogeny Database](#References)] or otherwise referenced for the specific process.
 
+## **P-gp transporter ontogeny** information
+
+The renal ontogeny of P-gp was published by [[Hunt 2024](#References)]. This ontogeny goes back to transporter expression measurements from human postmortem renal cortical tissue samples [[Cheung 2019](#References)]. The ontogeny of the renal P-gp transporter was applied to all other P-gp expressing organs, mainly, liver and intestine and implemented in PK-Sim in the following way:
+
+| **Post Menstrual Age [yr(s)]**   | **Ontogeny Scaling Factor**    | **GeoSD** |
+| :-------------- | ----------- | ----------- |
+| 0.1                            | 0                           | 2.903     |
+| 0.2                            | 0.001                       | 2.901     |
+| 0.3                            | 0.004                       | 2.89      |
+| 0.4                            | 0.015                       | 2.857     |
+| 0.5                            | 0.04                        | 2.783     |
+| 0.6                            | 0.088                       | 2.653     |
+| 0.7                            | 0.163                       | 2.472     |
+| 0.8                            | 0.264                       | 2.267     |
+| 0.9                            | 0.381                       | 2.072     |
+| 1                              | 0.499                       | 1.91      |
+| 1.1                            | 0.606                       | 1.789     |
+| 1.2                            | 0.696                       | 1.702     |
+| 1.3                            | 0.767                       | 1.64      |
+| 1.4                            | 0.822                       | 1.597     |
+| 1.5                            | 0.864                       | 1.567     |
+| 1.6                            | 0.895                       | 1.546     |
+| 1.7                            | 0.918                       | 1.53      |
+| 1.8                            | 0.936                       | 1.519     |
+| 1.9                            | 0.949                       | 1.511     |
+| 2                              | 0.959                       | 1.504     |
+| 2.1                            | 0.967                       | 1.5       |
+| 2.2                            | 0.973                       | 1.496     |
+| 2.3                            | 0.978                       | 1.493     |
+| 2.4                            | 0.982                       | 1.491     |
+| 2.5                            | 0.985                       | 1.489     |
+| 2.6                            | 0.987                       | 1.487     |
+| 2.7                            | 0.989                       | 1.486     |
+| 2.8                            | 0.991                       | 1.485     |
+| 2.9                            | 0.992                       | 1.484     |
+| 3                              | 0.993                       | 1.484     |
+| 4                              | 0.998                       | 1.481     |
+| 5                              | 0.999                       | 1.48      |
+| 10                             | 1                           | 1.48      |
+| 15                             | 1                           | 1.48      |
+| 20                             | 1                           | 1.48      |
+| 30                             | 1                           | 1.48      |
+| 40                             | 1                           | 1.48      |
+| 60                             | 1                           | 1.48      |
+| 80                             | 1                           | 1.48      |
+| 100                            | 1                           | 1.48      |
+
+
+
 ## Qualification of **P-gp transporter ontogeny**
 
 To qualify the OSP suite for the pediatric translation of the pharmacokinetics of drugs that are transported by P-gp, the following probe substance was included:
