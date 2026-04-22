@@ -1,6 +1,6 @@
 The presented qualification report evaluates the predictive performance of the OSP suite to predict P-gp related drug transporter activity in children.
 
-Therefore, PBPK models of specific *in vivo* probe substances covering children aged below 6 months up to adolescents were built and evaluated. All models are whole-body PBPK models, allowing for dynamic pediatric translation in organs expressing P-gp. The qualification report demonstrates the level of confidence of the OSP suite with regard to reliable PBPK predictions of age-related P-gp-mediated drug transport during model-informed drug development. The presented PBPK models as well as the respective qualification plan and qualification report are provided open-source and transparently documented ([https://github.com/Open-Systems-Pharmacology/Pediatric_Qualification_Package_P-gp_Ontogeny](https://github.com/Open-Systems-Pharmacology/Pediatric_Qualification_Package_P-gp_Ontogeny)). 
+Therefore, PBPK models of specific *in vivo* probe substances covering pediatric populations from approximately 1 week to 4 years of age were built and evaluated. All models are whole-body PBPK models, allowing for dynamic pediatric translation in organs expressing P-gp. The qualification report demonstrates the level of confidence of the OSP suite with regard to reliable PBPK predictions of age-related P-gp-mediated drug transport during model-informed drug development. The presented PBPK models as well as the respective qualification plan and qualification report are provided open-source and transparently documented ([https://github.com/Open-Systems-Pharmacology/Pediatric_Qualification_Package_P-gp_Ontogeny](https://github.com/Open-Systems-Pharmacology/Pediatric_Qualification_Package_P-gp_Ontogeny)). 
 
 
 ## Translation of Adult PBPK to Children
@@ -20,11 +20,13 @@ For qualification purpose, during the translation of adult PBPK to children the 
 
 The age-dependencies of the relevant anthropometric (height, weight) and physiological parameters (e.g. blood flows, organ volumes, binding protein concentrations, hematocrit, cardiac output) in children was gathered from the literature and has been previously summarized [[Edginton 2006](#references)]. The information was incorporated into PK-Sim® and was used as default values for the simulations in children.
 
-The  applied ontogeny and variability of plasma proteins and active processes that are integrated into PK-Sim® for translation to children are described in the publicly available ‘PK-Sim® Ontogeny Database Version 7.3 [[Ontogeny Database](#references)] or otherwise referenced for the specific process.
+The applied ontogeny and variability of plasma proteins and active processes that are integrated into PK-Sim® for translation to children are described in the publicly available [[PK-Sim® Ontogeny Database](#references)] or otherwise referenced for the specific process.
 
 ## **P-gp transporter ontogeny** information
 
 The renal ontogeny of P-gp was published by [[Hunt 2024](#references)]. This ontogeny goes back to transporter expression measurements from human postmortem renal cortical tissue samples [[Cheung 2019](#references)]. The ontogeny of the renal P-gp transporter was applied to all other P-gp expressing organs, mainly, liver and intestine and implemented in PK-Sim in the following way:
+
+Table 1-1: P-gp ontogeny scaling factors and geometric standard deviations as a function of post-menstrual age, derived from [[Hunt 2024](#references)].
 
 | **Post Menstrual Age [yr(s)]**   | **Ontogeny Scaling Factor**    | **GeoSD** |
 | :-------------- | ----------- | ----------- |
@@ -62,9 +64,6 @@ The renal ontogeny of P-gp was published by [[Hunt 2024](#references)]. This ont
 | 5                              | 0.999                       | 1.48      |
 | 10                             | 1                           | 1.48      |
 
-
-
-
 ## Qualification of **P-gp transporter ontogeny**
 
 To qualify the OSP suite for the pediatric translation of the pharmacokinetics of drugs that are transported by P-gp, the following probe substance was included:
@@ -74,3 +73,9 @@ To qualify the OSP suite for the pediatric translation of the pharmacokinetics o
 
 The adult PBPK model reports and the corresponding PK-Sim project files are filed at: [https://github.com/Open-Systems-Pharmacology/OSP-PBPK-Model-Library/](https://github.com/Open-Systems-Pharmacology/OSP-PBPK-Model-Library/)
 
+For reproducibility of this qualification, the specific model files used were:
+
+- [Digoxin-Model release v2.0](https://github.com/Open-Systems-Pharmacology/Digoxin-Model/releases/tag/v2.0)
+- [Digoxin pediatric PK-Sim snapshot (Digoxin_Pediatrics.json release v1.1)](https://github.com/Open-Systems-Pharmacology/Digoxin-Pediatrics/releases/tag/v1.1)
+
+This qualification currently uses a single probe compound (Digoxin). Since Digoxin clearance includes substantial renal filtration in addition to P-gp-mediated transport, this should be considered a limitation of the current qualification package.
