@@ -1,32 +1,26 @@
 {
-    "$schema": "https://github.com/Open-Systems-Pharmacology/QualificationPlan/releases/download/v3.0/OSP_Qualification_Plan_Schema.json",
+    "$schema": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/QualificationPlan/v3.5/schemas/OSP_Qualification_Plan_Schema.json",
     "Projects": [
         {
             "Id": "Digoxin",
-            "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Digoxin-Model/master/Digoxin.json",
+            "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Digoxin-Model/v2.0/Digoxin-Model.json"
+        },
+        {
+            "Id": "Digoxin-Pediatrics",
+            "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Digoxin-Pediatrics/v1.1/Digoxin_Pediatrics.json",
             "BuildingBlocks": [
                 {
                     "Type": "Compound",
                     "Name": "Digoxin",
                     "Project": "Digoxin"
-                },
-                {
-                    "Type": "Formulation",
-                    "Name": "Solution",
-                    "Project": "Digoxin"
                 }
             ]
-        },
-        {
-            "Id": "Digoxin-Pediatrics",
-            "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Digoxin-Pediatrics/main/Digoxin_Pediatrics.json",
-            "BuildingBlocks": []
         }
     ],
     "ObservedDataSets": [
         {
             "Id": "PK-Parameter",
-            "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Database-for-observed-data/master/Pediatrics.csv",
+            "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Database-for-observed-data/v1.9/Pediatrics.csv",
             "Type": "PKRatio"
         }
     ],
@@ -147,7 +141,7 @@
         "PKRatioPlots": [
             {
                 "Title": "Overall predictivity of the Digoxin PBPK model. Open circles represent mean ratios of PBPK predicted AUC over observed AUC of digoxin in children 3 days to 8 years old. Blue dashed lines and red dotted lines represent the 1.5-fold and 2-fold error, respectively.",
-                "SectionReference": "Digoxin_children",
+                "SectionReference": "digoxin-children",
                 "Artifacts": [
                     "GMFE",
                     "Measure",
@@ -276,24 +270,24 @@
     },
     "Sections": [
         {
-            "Reference": "Introduction",
+            "Reference": "introduction",
             "Title": "Introduction to Pediatric Translation and P-gp Ontogeny Qualification",
             "Content": "Content/Introduction.md"
         },
         {
-            "Reference": "Results",
+            "Reference": "results",
             "Title": "Pediatric translation qualification results",
             "Content": "Content/Translation.md",
             "Sections": [
                 {
-                    "Reference": "Digoxin_children",
+                    "Reference": "digoxin-children",
                     "Content": "Content/Digoxin_children.md",
                     "Title": "Digoxin PK Ratio tables and Figures"
                 }
             ]
         },
         {
-            "Reference": "References",
+            "Reference": "references",
             "Title": "References",
             "Content": "Content/References.md"
         }
